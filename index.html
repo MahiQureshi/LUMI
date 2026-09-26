@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Premium modern glassmorphism web application"
+    >
+
+    <title>NovaFlow — Premium Web Application</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     BACKGROUND / DECORATIVE ELEMENTS
+========================================================= -->
+
+<div class="background">
+    <div class="sky-orb orb-blue"></div>
+    <div class="sky-orb orb-cyan"></div>
+    <div class="sky-orb orb-purple"></div>
+
+    <div class="color-orb orb-red"></div>
+    <div class="color-orb orb-yellow"></div>
+    <div class="color-orb orb-green"></div>
+
+    <div class="background-grid"></div>
+</div>
+
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================= -->
+
+<div id="pageLoader" class="page-loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-sparkles"></i>
+            </span>
+        </div>
+
+        <div class="loader-spinner"></div>
+
+        <p>Preparing your experience...</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     APP CONTAINER
+========================================================= -->
+
+<div class="app">
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="navbar glass">
+
+        <div class="nav-left">
+
+            <a href="#home" class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <div class="brand-text">
+                    <span class="brand-name">NovaFlow</span>
+                    <span class="brand-tagline">Smart. Simple. Powerful.</span>
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Desktop Navigation -->
+
+        <nav class="desktop-nav">
+
+            <a href="#home" class="nav-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#features" class="nav-link">
+                <i class="fa-solid fa-grid-2"></i>
+                <span>Features</span>
+            </a>
+
+            <a href="#dashboard" class="nav-link">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#activity" class="nav-link">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Activity</span>
+            </a>
+
+            <a href="#about" class="nav-link">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Navigation Actions -->
+
+        <div class="nav-actions">
+
+            <button
+                class="icon-button"
+                id="notificationButton"
+                aria-label="Notifications"
+            >
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification-dot"></span>
+            </button>
+
+
+            <button
+                class="icon-button"
+                id="themeButton"
+                aria-label="Change theme"
+            >
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+
+            <button class="profile-button" id="profileButton">
+
+                <div class="avatar">
+                    M
+                </div>
+
+                <div class="profile-info">
+                    <strong>Mahi</strong>
+                    <span>Member</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </button>
+
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open menu"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MOBILE NAVIGATION
+    ====================================================== -->
+
+    <nav class="mobile-nav glass" id="mobileNav">
+
+        <a href="#home" class="mobile-nav-link active">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+
+        <a href="#features" class="mobile-nav-link">
+            <i class="fa-solid fa-grid-2"></i>
+            Features
+        </a>
+
+        <a href="#dashboard" class="mobile-nav-link">
+            <i class="fa-solid fa-chart-pie"></i>
+            Dashboard
+        </a>
+
+        <a href="#activity" class="mobile-nav-link">
+            <i class="fa-solid fa-bolt"></i>
+            Activity
+        </a>
+
+        <a href="#about" class="mobile-nav-link">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+        </a>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO SECTION
+        ================================================== -->
+
+        <section id="home" class="hero section">
+
+            <div class="hero-content reveal">
+
+                <div class="status-pill">
+
+                    <span class="status-indicator"></span>
+
+                    <span>Everything is running smoothly</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+
+                <h1>
+
+                    Build something
+
+                    <span class="gradient-text">
+                        extraordinary.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    A beautiful, intelligent and powerful workspace
+                    designed to help you manage your work,
+                    track progress and achieve more.
+
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <button
+                        class="primary-button"
+                        id="getStartedButton"
+                    >
+
+                        <span>Get Started</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <button
+                        class="secondary-button"
+                        id="exploreButton"
+                    >
+
+                        <i class="fa-regular fa-circle-play"></i>
+
+                        <span>Explore Platform</span>
+
+                    </button>
+
+                </div>
+
+
+                <div class="hero-trust">
+
+                    <div class="trust-avatars">
+
+                        <span class="mini-avatar">A</span>
+                        <span class="mini-avatar">R</span>
+                        <span class="mini-avatar">S</span>
+                        <span class="mini-avatar">+</span>
+
+                    </div>
+
+                    <div>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <span>
+                            Trusted by modern teams
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Visual -->
+
+            <div class="hero-visual reveal">
+
+                <div class="floating-badge badge-top">
+
+                    <div class="badge-icon green">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+
+                    <div>
+                        <span>Growth</span>
+                        <strong>+28.4%</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-dashboard glass">
+
+                    <div class="dashboard-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                OVERVIEW
+                            </span>
+
+                            <h3>
+                                Performance
+                            </h3>
+
+                        </div>
+
+                        <button class="small-icon-button">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="chart-area">
+
+                        <div class="chart-label">
+                            <strong>₹84,260</strong>
+                            <span>+18.6%</span>
+                        </div>
+
+                        <div class="fake-chart">
+
+                            <svg
+                                viewBox="0 0 600 240"
+                                preserveAspectRatio="none"
+                            >
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="chartGradient"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+
+                                        <stop
+                                            offset="0%"
+                                            stop-opacity="0.45"
+                                        />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-opacity="0"
+                                        />
+
+                                    </linearGradient>
+
+                                </defs>
+
+                                <path
+                                    class="chart-fill"
+                                    d="M0,190 C50,150 80,175 130,140 C180,105 210,145 260,110 C310,75 340,105 390,75 C440,45 470,70 520,35 C550,15 580,25 600,10 L600,240 L0,240 Z"
+                                />
+
+                                <path
+                                    class="chart-line"
+                                    d="M0,190 C50,150 80,175 130,140 C180,105 210,145 260,110 C310,75 340,105 390,75 C440,45 470,70 520,35 C550,15 580,25 600,10"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-bottom">
+
+                        <span>Jan</span>
+                        <span>Feb</span>
+                        <span>Mar</span>
+                        <span>Apr</span>
+                        <span>May</span>
+                        <span>Jun</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-badge badge-bottom">
+
+                    <div class="badge-icon yellow">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div>
+                        <span>Productivity</span>
+                        <strong>92%</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             QUICK STATS
+        ================================================== -->
+
+        <section class="stats-section section">
+
+            <div class="stats-grid reveal">
+
+                <article class="stat-card glass">
+
+                    <div class="stat-icon blue">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span class="stat-label">
+                            Active Users
+                        </span>
+
+                        <strong
+                            class="counter"
+                            data-target="12840"
+                        >
+                            0
+                        </strong>
+
+                        <span class="stat-growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            12.8%
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card glass">
+
+                    <div class="stat-icon red">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span class="stat-label">
+                            Tasks Completed
+                        </span>
+
+                        <strong
+                            class="counter"
+                            data-target="8472"
+                        >
+                            0
+                        </strong>
+
+                        <span class="stat-growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            18.4%
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card glass">
+
+                    <div class="stat-icon yellow">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span class="stat-label">
+                            Productivity
+                        </span>
+
+                        <strong>
+                            92%
+                        </strong>
+
+                        <span class="stat-growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            6.2%
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card glass">
+
+                    <div class="stat-icon green">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span class="stat-label">
+                            Success Rate
+                        </span>
+
+                        <strong>
+                            98.6%
+                        </strong>
+
+                        <span class="stat-growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            3.4%
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FEATURES
+        ================================================== -->
+
+        <section id="features" class="section">
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <span class="section-label">
+                        POWERFUL FEATURES
+                    </span>
+
+                    <h2>
+                        Everything you need.
+                    </h2>
+
+                    <p>
+                        Powerful tools wrapped in a simple,
+                        intuitive experience.
+                    </p>
+
+                </div>
+
+                <button
+                    class="outline-button"
+                    id="viewAllFeatures"
+                >
+
+                    View all
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <!-- BLUE FEATURE -->
+
+                <article class="feature-card feature-blue glass reveal">
+
+                    <div class="feature-card-top">
+
+                        <div class="feature-icon blue">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                        <span class="feature-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Smart Workspace
+                    </h3>
+
+                    <p>
+                        Organize everything in one intelligent
+                        workspace built around your workflow.
+                    </p>
+
+                    <a href="#" class="feature-link">
+
+                        Explore feature
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </article>
+
+
+                <!-- RED FEATURE -->
+
+                <article class="feature-card feature-red glass reveal">
+
+                    <div class="feature-card-top">
+
+                        <div class="feature-icon red">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <span class="feature-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Advanced Analytics
+                    </h3>
+
+                    <p>
+                        Understand your progress through
+                        clear and meaningful real-time insights.
+                    </p>
+
+                    <a href="#" class="feature-link">
+
+                        View analytics
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </article>
+
+
+                <!-- YELLOW FEATURE -->
+
+                <article class="feature-card feature-yellow glass reveal">
+
+                    <div class="feature-card-top">
+
+                        <div class="feature-icon yellow">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <span class="feature-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Automation
+                    </h3>
+
+                    <p>
+                        Automate repetitive actions and spend
+                        more time on meaningful work.
+                    </p>
+
+                    <a href="#" class="feature-link">
+
+                        Start automating
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </article>
+
+
+                <!-- GREEN FEATURE -->
+
+                <article class="feature-card feature-green glass reveal">
+
+                    <div class="feature-card-top">
+
+                        <div class="feature-icon green">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <span class="feature-number">
+                            04
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Secure by Design
+                    </h3>
+
+                    <p>
+                        Your data stays protected with modern
+                        security-focused architecture.
+                    </p>
+
+                    <a href="#" class="feature-link">
+
+                        Learn more
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DASHBOARD
+        ================================================== -->
+
+        <section id="dashboard" class="section dashboard-section">
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <span class="section-label">
+                        LIVE DASHBOARD
+                    </span>
+
+                    <h2>
+                        Your progress at a glance.
+                    </h2>
+
+                    <p>
+                        Monitor important metrics without
+                        losing sight of what matters.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-actions">
+
+                    <button
+                        class="filter-button active"
+                        data-filter="week"
+                    >
+                        Week
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-filter="month"
+                    >
+                        Month
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-filter="year"
+                    >
+                        Year
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-grid">
+
+
+                <!-- MAIN ANALYTICS -->
+
+                <div class="analytics-card glass reveal">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                PERFORMANCE
+                            </span>
+
+                            <h3>
+                                Overall activity
+                            </h3>
+
+                        </div>
+
+                        <button class="small-icon-button">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="analytics-value">
+
+                        <strong>
+                            86.4%
+                        </strong>
+
+                        <span class="positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            14.8%
+                        </span>
+
+                    </div>
+
+
+                    <div class="large-chart">
+
+                        <div class="chart-y-axis">
+
+                            <span>100</span>
+                            <span>75</span>
+                            <span>50</span>
+                            <span>25</span>
+                            <span>0</span>
+
+                        </div>
+
+
+                        <div class="chart-wrapper">
+
+                            <div class="chart-grid-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+
+                            <svg
+                                class="activity-chart"
+                                viewBox="0 0 800 300"
+                                preserveAspectRatio="none"
+                            >
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="activityGradient"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+
+                                        <stop
+                                            offset="0%"
+                                            stop-opacity="0.25"
+                                        />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-opacity="0"
+                                        />
+
+                                    </linearGradient>
+
+                                </defs>
+
+
+                                <path
+                                    class="activity-fill"
+                                    d="M0,240 C60,220 80,180 140,195 C200,210 230,125 280,145 C330,165 350,100 400,115 C450,130 480,65 530,85 C580,105 610,40 660,65 C710,90 750,35 800,20 L800,300 L0,300 Z"
+                                />
+
+
+                                <path
+                                    class="activity-line"
+                                    d="M0,240 C60,220 80,180 140,195 C200,210 230,125 280,145 C330,165 350,100 400,115 C450,130 480,65 530,85 C580,105 610,40 660,65 C710,90 750,35 800,20"
+                                />
+
+                            </svg>
+
+
+                            <div class="chart-x-axis">
+
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCTIVITY -->
+
+                <div class="productivity-card glass reveal">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                PRODUCTIVITY
+                            </span>
+
+                            <h3>
+                                Weekly score
+                            </h3>
+
+                        </div>
+
+                        <div class="feature-icon yellow">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-circle">
+
+                        <div class="score-inner">
+
+                            <strong>
+                                92
+                            </strong>
+
+                            <span>
+                                /100
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-status">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            Excellent performance
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        You're performing better than
+                        84% of users this week.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             QUICK ACTIONS
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <span class="section-label">
+                        QUICK ACTIONS
+                    </span>
+
+                    <h2>
+                        Get things done faster.
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions-grid">
+
+
+                <button
+                    class="quick-action-card glass reveal"
+                    data-action="create"
+                >
+
+                    <div class="quick-action-icon blue">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div>
+                        <strong>Create New</strong>
+                        <span>Start something new</span>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+
+                </button>
+
+
+                <button
+                    class="quick-action-card glass reveal"
+                    data-action="report"
+                >
+
+                    <div class="quick-action-icon red">
+                        <i class="fa-solid fa-file-chart-column"></i>
+                    </div>
+
+                    <div>
+                        <strong>Generate Report</strong>
+                        <span>View detailed insights</span>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+
+                </button>
+
+
+                <button
+                    class="quick-action-card glass reveal"
+                    data-action="share"
+                >
+
+                    <div class="quick-action-icon green">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+
+                    <div>
+                        <strong>Share Workspace</strong>
+                        <span>Invite your team</span>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+
+                </button>
+
+
+                <button
+                    class="quick-action-card glass reveal"
+                    data-action="settings"
+                >
+
+                    <div class="quick-action-icon yellow">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+
+                    <div>
+                        <strong>Preferences</strong>
+                        <span>Customize your experience</span>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACTIVITY
+        ================================================== -->
+
+        <section id="activity" class="section">
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <span class="section-label">
+                        RECENT ACTIVITY
+                    </span>
+
+                    <h2>
+                        What's happening?
+                    </h2>
+
+                </div>
+
+                <button class="outline-button">
+                    View all
+                </button>
+
+            </div>
+
+
+            <div class="activity-container glass reveal">
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon green">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div class="activity-details">
+
+                        <strong>
+                            Project completed
+                        </strong>
+
+                        <span>
+                            Your project was successfully completed.
+                        </span>
+
+                    </div>
+
+                    <time>
+                        2 min ago
+                    </time>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon blue">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+
+                    <div class="activity-details">
+
+                        <strong>
+                            New team member
+                        </strong>
+
+                        <span>
+                            A new member joined your workspace.
+                        </span>
+
+                    </div>
+
+                    <time>
+                        18 min ago
+                    </time>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon yellow">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div class="activity-details">
+
+                        <strong>
+                            Productivity milestone
+                        </strong>
+
+                        <span>
+                            You reached a new productivity milestone.
+                        </span>
+
+                    </div>
+
+                    <time>
+                        1 hr ago
+                    </time>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon red">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div class="activity-details">
+
+                        <strong>
+                            Analytics updated
+                        </strong>
+
+                        <span>
+                            Your latest performance report is ready.
+                        </span>
+
+                    </div>
+
+                    <time>
+                        3 hrs ago
+                    </time>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TESTIMONIAL / SOCIAL PROOF
+        ================================================== -->
+
+        <section class="section testimonial-section">
+
+            <div class="testimonial-card glass reveal">
+
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+                <blockquote>
+
+                    "A thoughtfully designed experience that
+                    makes complex workflows feel incredibly simple."
+
+                </blockquote>
+
+
+                <div class="testimonial-user">
+
+                    <div class="testimonial-avatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Sarah Khan
+                        </strong>
+
+                        <span>
+                            Product Designer
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="section">
+
+            <div class="cta-card reveal">
+
+                <div class="cta-background-shape shape-one"></div>
+                <div class="cta-background-shape shape-two"></div>
+
+                <div class="cta-content">
+
+                    <span class="section-label">
+                        READY TO START?
+                    </span>
+
+                    <h2>
+                        Turn your ideas into
+                        <span>something remarkable.</span>
+                    </h2>
+
+                    <p>
+                        Start building a smarter and more
+                        productive workflow today.
+                    </p>
+
+
+                    <div class="cta-actions">
+
+                        <button
+                            class="primary-button light"
+                            id="ctaStartButton"
+                        >
+
+                            Get Started
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                        <button class="cta-text-button">
+                            Learn more
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cta-visual">
+
+                    <div class="floating-glass-card">
+
+                        <i class="fa-solid fa-sparkles"></i>
+
+                        <strong>
+                            Your next idea
+                        </strong>
+
+                        <span>
+                            starts here.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section id="about" class="section about-section">
+
+            <div class="about-grid">
+
+
+                <div class="about-content reveal">
+
+                    <span class="section-label">
+                        ABOUT THE PLATFORM
+                    </span>
+
+                    <h2>
+                        Designed around
+                        <span class="gradient-text">
+                            people.
+                        </span>
+                    </h2>
+
+                    <p>
+                        NovaFlow combines beautiful design,
+                        thoughtful interactions and powerful
+                        functionality into one seamless
+                        digital experience.
+                    </p>
+
+
+                    <div class="about-points">
+
+                        <div class="about-point">
+
+                            <div class="check-icon green">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <span>
+                                Simple and intuitive experience
+                            </span>
+
+                        </div>
+
+
+                        <div class="about-point">
+
+                            <div class="check-icon blue">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <span>
+                                Fast and responsive interface
+                            </span>
+
+                        </div>
+
+
+                        <div class="about-point">
+
+                            <div class="check-icon yellow">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <span>
+                                Built for modern workflows
+                            </span>
+
+                        </div>
+
+
+                        <div class="about-point">
+
+                            <div class="check-icon red">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <span>
+                                Secure and scalable architecture
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-visual reveal">
+
+                    <div class="about-orb"></div>
+
+                    <div class="about-glass-card glass">
+
+                        <div class="about-card-header">
+
+                            <div class="feature-icon blue">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+
+                            <span>
+                                CORE SYSTEM
+                            </span>
+
+                        </div>
+
+
+                        <div class="system-bars">
+
+                            <div class="system-bar">
+                                <span></span>
+                            </div>
+
+                            <div class="system-bar">
+                                <span></span>
+                            </div>
+
+                            <div class="system-bar">
+                                <span></span>
+                            </div>
+
+                            <div class="system-bar">
+                                <span></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="system-status">
+
+                            <span class="status-indicator"></span>
+
+                            All systems operational
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="brand">
+
+                    <div class="brand-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <div class="brand-text">
+
+                        <span class="brand-name">
+                            NovaFlow
+                        </span>
+
+                        <span class="brand-tagline">
+                            Smart. Simple. Powerful.
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+                    A modern digital workspace built
+                    for people who want to achieve more.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Product
+                </h4>
+
+                <a href="#features">Features</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#activity">Activity</a>
+                <a href="#">Integrations</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="#about">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Support
+                </h4>
+
+                <a href="#">Help Center</a>
+                <a href="#">Documentation</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 NovaFlow. All rights reserved.
+            </span>
+
+            <span>
+                Made with <i class="fa-solid fa-heart"></i>
+                for better experiences.
+            </span>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+
+<!-- =========================================================
+     NOTIFICATION PANEL
+========================================================= -->
+
+<div
+    class="notification-panel glass"
+    id="notificationPanel"
+>
+
+    <div class="panel-header">
+
+        <div>
+            <span class="eyebrow">UPDATES</span>
+            <h3>Notifications</h3>
+        </div>
+
+        <button
+            class="close-button"
+            id="closeNotification"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="notification-list">
+
+        <div class="notification-item unread">
+
+            <div class="notification-icon green">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <div>
+                <strong>
+                    Task completed
+                </strong>
+
+                <span>
+                    Your latest task has been completed.
+                </span>
+
+                <small>
+                    2 minutes ago
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="notification-item">
+
+            <div class="notification-icon yellow">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+
+            <div>
+                <strong>
+                    New milestone
+                </strong>
+
+                <span>
+                    You reached 90% productivity.
+                </span>
+
+                <small>
+                    1 hour ago
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="notification-item">
+
+            <div class="notification-icon blue">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div>
+                <strong>
+                    New activity
+                </strong>
+
+                <span>
+                    Your workspace has been updated.
+                </span>
+
+                <small>
+                    3 hours ago
+                </small>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     PROFILE DROPDOWN
+========================================================= -->
+
+<div
+    class="profile-dropdown glass"
+    id="profileDropdown"
+>
+
+    <div class="profile-dropdown-header">
+
+        <div class="avatar large">
+            M
+        </div>
+
+        <div>
+            <strong>
+                Mahi
+            </strong>
+
+            <span>
+                Member account
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="dropdown-divider"></div>
+
+
+    <a href="#">
+        <i class="fa-regular fa-user"></i>
+        Profile
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-sliders"></i>
+        Preferences
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-shield-halved"></i>
+        Security
+    </a>
+
+
+    <div class="dropdown-divider"></div>
+
+
+    <button id="logoutButton">
+
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+        Sign out
+
+    </button>
+
+</div>
+
+
+
+<!-- =========================================================
+     MODAL
+========================================================= -->
+
+<div class="modal-overlay" id="modalOverlay">
+
+    <div class="modal glass">
+
+        <div class="modal-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    QUICK ACTION
+                </span>
+
+                <h3 id="modalTitle">
+                    Create something new
+                </h3>
+
+            </div>
+
+            <button
+                class="close-button"
+                id="closeModal"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <form id="quickActionForm">
+
+            <div class="form-group">
+
+                <label for="itemName">
+                    Name
+                </label>
+
+                <div class="input-wrapper">
+
+                    <i class="fa-regular fa-pen-to-square"></i>
+
+                    <input
+                        type="text"
+                        id="itemName"
+                        name="itemName"
+                        placeholder="Enter a name"
+                        required
+                    >
+
+                </div>
+
+                <small class="form-error" id="nameError"></small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="itemType">
+                    Category
+                </label>
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <select
+                        id="itemType"
+                        name="itemType"
+                    >
+
+                        <option value="">
+                            Select category
+                        </option>
+
+                        <option value="project">
+                            Project
+                        </option>
+
+                        <option value="task">
+                            Task
+                        </option>
+
+                        <option value="workspace">
+                            Workspace
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="itemDescription">
+                    Description
+                </label>
+
+                <textarea
+                    id="itemDescription"
+                    name="itemDescription"
+                    rows="4"
+                    placeholder="Tell us a little about it..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    class="secondary-button"
+                    id="cancelModal"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
+
+                    Create
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     TOAST CONTAINER
+========================================================= -->
+
+<div
+    class="toast-container"
+    id="toastContainer"
+>
+
+    <!-- JavaScript inserts toast messages here -->
+
+</div>
+
+
+
+<!-- =========================================================
+     SCROLL TO TOP
+========================================================= -->
+
+<button
+    class="scroll-top"
+    id="scrollTopButton"
+    aria-label="Scroll to top"
+>
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
